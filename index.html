@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ATM Interface</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/745/745059.png" alt="ATM Logo" class="logo">
+        <form id="atmForm">
+            <input type="password" id="password" placeholder="Enter 4-digit PIN" maxlength="4" required>
+            <button type="submit">Verify</button>
+        </form>
+        
+        <div id="actions" class="hidden">
+            <button class="action-button" onclick="deposit()">Deposit</button>
+            <button class="action-button" onclick="withdraw()">Withdraw</button>
+        </div>
+        
+        <div id="result" class="hidden"></div>
+        
+        <div id="receipt" class="hidden">
+            <h2>Receipt</h2>
+            <div id="receipt-details"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
